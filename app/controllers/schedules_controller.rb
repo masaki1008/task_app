@@ -20,6 +20,8 @@ class SchedulesController < ApplicationController
 
   def show
     @schedule = Schedule.find(params[:id])
+    @schedule = Schedule.find_by(id: params[:id])
+    @schedules_count = Schedule.count
   end
 
   def edit
