@@ -2,6 +2,8 @@ class SchedulesController < ApplicationController
   
   def index
     @schedules = Schedule.all
+    @schedule = Schedule.find_by(id: params[:id])
+    @schedule_count = Schedule.all.count
   end
   
   def new
@@ -20,8 +22,6 @@ class SchedulesController < ApplicationController
 
   def show
     @schedule = Schedule.find(params[:id])
-    @schedule = Schedule.find_by(id: params[:id])
-    @schedules_count = Schedule.count
   end
 
   def edit

@@ -23,10 +23,6 @@
       <tr>
         <th><%= f.label :all_day ,"終日" %></th>
         <td><%= f.check_box :all_day %>
-          <% if @schedule.all_day == true %>
-           ◯
-          <% else @schedule.all_day == false %>
-          <% end %>
         <p>終日の場合はチェックを入れます</p></td>
       </tr>
       
