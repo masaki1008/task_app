@@ -32,10 +32,9 @@
         <td><%= schedule.start_date %></td>
         <td><%= schedule.end_date %></td>
         <td>
-          <%= schedule.all_day %>
-          <% if schedule.all_day == 1%>
+          <% if schedule.all_day == "1" %>
             ◯
-          <% else schedule.all_day == 0%>
+          <% else %>
           <% end %>
         </td>
         <td><%= schedule.updated_at.to_s(:datetime_jp) %></td>
