@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  color: white;
+}
+
+footer{
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  color: white;
+}
+
+table th {
+  background-color: #fbc25b;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #f9ecd5;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+// 通知・警告
+.notice {
+  background-color: #99FFCC;
+  padding: 5px;
+}
